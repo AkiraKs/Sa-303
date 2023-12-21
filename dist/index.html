@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alimentation Durable</title>
+    <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <button class="musique" onclick="togglePlayPause()">Play</button>
+
+    <div class="container" id="imageContainer">
+      <div class="contenu">
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <lottie-player
+          src="/json_file/camionette/camionette.json"
+          background="none"
+          speed="1"
+          style="width: fit-content; height: auto"
+          autoplay>
+        </lottie-player>
+
+        <section class="book__section">
+          <div class="book">
+            <div class="book-cover">
+              <div>
+                <h1 class="titre_menu">L'alimentation Durable</h1>
+                <div class="separator"></div>
+                <h2>by Ademe</h2>
+              </div>
+            </div>
+            <div class="book-content">
+              <h3 class="introduction">
+                Bienvenue au restaurant "ÉcoGastronomie", où chaque plat raconte
+                une étape du voyage vers une alimentation plus durable.
+                Préparez-vous à un festin éducatif, un parcours chronologique à
+                travers les chiffres de la durabilité alimentaire.
+              </h3>
+              <div class="carte"></div>
+              <h1 class="type">Entrée</h1>
+              <ul class="list">
+                <li>
+                  <p>
+                    <strong>Plateau Carnivore Responsable :</strong>Plongez dans un assortiment de viandes
+                    sélectionnées avec soin.
+                  </p>
+                </li>
+              </ul>
+              <h1 class="type">Plat</h1>
+              <ul class="list">
+                <li>
+                  <p>
+                    <strong>Pizza Terre et Tradition :</strong> Une création
+                    délicieuse où chaque ingrédient est choisi pour son impact
+                    carbone réduit.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <strong>Salade OGM-Free :</strong> Petites bouchées
+                    végétariennes sans OGM.
+                  </p>
+                </li>
+              </ul>
+              <h1 class="type">Dessert</h1>
+              <ul class="list">
+                <li>
+                  <p>
+                    <strong>Gâteau Anti-Gaspillage :</strong> Un gâteau réalisé
+                    à partir d'ingrédients récupérés pour lutter contre le gaspillage
+                    alimentaire.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <strong>Équitable Épices Tarte :</strong> Une tarte aux
+                    fruits agrémentée d'épices équitables.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+
+        <div class="contenu__card__changement" id="id__chute">
+          <img src="./assets/cultiver.png" alt="Cultiver le changement" />
+        </div>
+
+        <section class="contenu__viande">
+          <div class="contenu__plateau" >
+            <p class="contenu__plateau__text">
+              La production de viande à un réel impact sur nos émissions de gaz
+              à effet de serre en France. Faites un pas vers la durabilité en
+              intégrant plus de repas végétariens dans votre routine.
+            </p>
+          </div>
+
+          <lottie-player
+            src="/json_file/plateau/plateau.json"
+            background="none"
+            speed="1"
+            style="width: 50rem; padding: 2rem"
+            id="id__plateau"
+          ></lottie-player>
+        </section>
+
+
+        <div class="contenu__card" id="id__card">
+          <img src="./assets/carbone.png" alt="Empreinte carbone" />
+        </div>
+
+        <section class="contenu__menu">
+          <ul class="contenu__pizza__menu">
+            <li>
+              <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+              <lottie-player
+                src="/json_file/pizza quart/pizza quart.json"
+                background="none"
+                speed="1"
+                style="width: 20rem; height: auto"
+                id="id__pizza__left"
+              ></lottie-player>
+            </li>
+            <li class="contenu__pizza__paragaphe">
+              <p class="contenu__pizza__text">
+                De nos jours <span class="text__bold">1/4</span> de notre empreinte carbonne est lié à notre
+                alimentation <span class="text__bold">67%</span> de cette empreinte concerne la phase de
+                production (en 2012).
+              </p>
+            </li>
+          </ul>
+
+          <ul class="contenu__pizza__menu">
+            <li class="contenu__pizza__paragaphe">
+              <p class="contenu__pizza__text">
+                <span class="text__bold">1/3</span> de notre production alimentaire est gaspillée soit  <span class="text__bold">10
+                Millions de tonnes par an</span>
+              </p>
+            </li>
+            <li>
+              <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+              <lottie-player
+                src="/json_file/pizza tier/pizza tier.json"
+                background="none"
+                speed="1"
+                style="width: 20rem; height: auto"
+                id="id__pizza__right"
+              ></lottie-player>
+            </li>
+          </ul>
+
+          <ul class="contenu__bd__menu">
+            <h2 class="contenu__bd__title">1/4 de notre empreinte carbone est issue de l’alimentation, cela comprends :</h2>
+            <li>
+              <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+              <lottie-player
+                src="/json_file/bande D/bande dessinée.json"
+                background="none"
+                speed="1"
+                style="width: 50rem; height: auto"
+                id="id__BD"
+              ></lottie-player>
+            </li>
+          </ul>
+        </section>
+
+
+        <div class="contenu__card__semer" id="id__semer">
+          <img src="./assets/semer.png" alt="Semer les graines" />
+        </div>
+
+        <section class="contenu__semer">
+          <ul class="contenu__semer__groupe">
+            <li class="contenu__semer__groupe__salade">
+              <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+              <lottie-player
+                src="/json_file/salade/salade.json"
+                background="none"
+                speed="1"
+                style="width: 10rem; height: auto"
+                id="id__salade"
+                loop
+                autoplay
+              ></lottie-player>
+            </li>
+            <li class="contenu__semer__groupe__salade contenu__semer__groupe__salade__middle">
+              <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+              <lottie-player
+                src="/json_file/salade/salade.json"
+                background="none"
+                speed="1"
+                style="width: 10rem; height: auto"
+                id="id__salade"
+                loop
+                autoplay
+              ></lottie-player>
+            </li>
+            <li class="contenu__semer__groupe__salade">
+              <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+              <lottie-player
+                src="/json_file/salade/salade.json"
+                background="none"
+                speed="1"
+                style="width: 10rem; height: auto"
+                id="id__salade"
+                loop
+                autoplay
+              ></lottie-player>
+            </li>
+          </ul>
+
+            <li class="contenu__semer__paragraphe">
+              <p class="contenu__semer__paragraphe__text">
+                Cultivez sainement avec des choix judicieux de graines, de sol et d'adaptation au climat.
+              </p>
+              <p class="contenu__semer__paragraphe__text">
+                Évitez les OGM, le tassement du sol et les pratiques non durables, tout en gérant les produits chimiques pour préserver l'eau, vous mangez donc plus sainement, et vous êtes plus autonomme dans votre alimentation !
+              </p>
+            </li>
+        </section>   
+
+
+        <div class="contenu__card" id="id__acheter">
+          <img src="./assets/acheter.png" alt="Acheter" />
+        </div>
+
+        <section class="contenu__achter">
+          <li class="contenu__acheter__ligne">
+            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            <lottie-player
+              src="/json_file/ligne/ligne.json"
+              background="none"
+              speed="1"
+              style="width: fit-content; height: auto"
+              id="id__lignes"
+              loop
+              autoplay
+            ></lottie-player>
+          </li>
+          <ul class="contenu__acheter__groupe">
+            <li class="contenu__acheter__paragraphe">
+              <p class="contenu__acheter__text">
+                Optez pour le local et le saisonnier !
+              </p>
+              <p class="contenu__acheter__text">
+                Les produits importés représentent <span class="text__bold">19%</span> des émissions liées à l'alimentation en France. Optez pour le local pour réduire cet impact.
+              </p>
+            </li>
+          </ul>
+        </section>        
+
+
+        <div class="contenu__card__gaspillage" id="id__gaspillage">
+          <img src="./assets/gaspillage.png" alt="Contre le gaspillage!" />
+        </div>
+
+        <section class="contenu__balance">
+          <li class="contenu__balance__lottie">
+            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            <lottie-player
+              src="/json_file/balance/balance.json"
+              background="none"
+              speed="1"
+              style="width: 30rem; height: auto"
+              id="id__balance"
+            ></lottie-player>
+          </li>
+          <ul class="contenu__balance__groupe">
+            <li class="contenu__balance__paragraphe">
+              <p class="contenu__balance__text">
+                <span class="text__bold">10 Mt</span>, c’est le poids annuel du gaspillage alimentaire estimé chaque année en France, Un gaspillage qui va du champ... à l’assiette !
+              </p>
+            </li>
+
+            <li class="contenu__balance__paragraphe">
+              <p class="contenu__balance__text">
+                En France, chacun contribue significativement au gaspillage alimentaire avec plus de <span class="text__bold">30kg</span> de déchets alimentaires chaque année.
+              </p>
+            </li>
+          </ul>
+        </section>
+
+
+        <div class="contenu__card" id="id__transition">
+          <img src="./assets/transition.png" alt="Les Français en transition!" />
+        </div>
+
+        <section class="contenu__transition">
+          <li class="contenu__transition__frite">
+            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            <lottie-player
+              src="/json_file/frite/frite.json"
+              background="none"
+              speed="1"
+              style="width: fit-content; height: auto"
+              id="id__frites"
+            ></lottie-player>
+          </li>
+
+          <ul class="contenu__tartine">
+          <li class="contenu__transition__tartine">
+            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            <lottie-player
+              src="/json_file/tartine/tartine.json"
+              background="none"
+              speed="1"
+              style="width: 27rem; height: auto"
+              id="id__tartine"
+            ></lottie-player>
+          </li>
+          <li class="contenu__transition__tartine">
+            <img src="./assets/tartine.png" alt="Tartine à la fraise  ">
+          </li>
+          </ul>
+          
+          <li class="contenu__transition__bilan">
+            <p class="contenu__transition__bilan__text">En résumé, les Français favorisent une alimentation responsable avec des produits locaux, bio et équitables, selon le "Baromètre de la transition alimentaire 2019", indiquant un changement positif vers des choix plus durables.</p>
+          </li>
+        </section> 
+
+        <div class="contenu__card__quiz" id="id__quiz">
+          <img src="./assets/quiz.png" alt="Quiz" />
+        </div>
+
+        <section class="quiz">
+          <div id="quiz"></div>
+              
+          <div id="results"></div>
+        </section>
+<button class="quiz__btn" id="submit">Résultat</button>
+
+<footer class="footer-distributed">
+  <div class="footer-right">
+      <a href="#"><img src="/asset/facebook.svg" alt=""></a>
+      <a href="#"><img src="/asset/instagram-round-svgrepo-com.svg" alt=""></a>
+      <a href="#"><img src="/asset/linkedin-round-svgrepo-com.svg" alt=""></a>
+  </div>
+  <div class="footer-left">
+      <p class="footer-links">
+          <a class="link-1" href="#">L'Alimentation Durable</a>
+          <a href="#">Cultiver le Changement</a>
+          <a href="#">Empreinte Carbone</a>
+          <a href="#">Semer les Graines</a>
+          <a href="#">Acheter Local</a>
+          <a href="#">Contre le Gaspillage</a>
+          <a href="#">Les Français en Transition</a>
+      </p>
+      <p>MÉCHAIN Adam - LAURIERE Adrien - LEGER Joris</p>
+  </div>
+</footer>
+
+
+    <audio id="myAudio" autoplay loop>
+      <source src="./assets/le_festin.mp3" type="audio/mp3" />
+    </audio>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
+    <script src="/lottie/lottie.js"></script>
+    <script src="/lottie/script.js"></script>
+  </body>
+</html>

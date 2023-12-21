@@ -1,0 +1,246 @@
+.text__bold {
+  font-weight: bold;
+}
+
+.musique {
+  --_g: linear-gradient(var(--c) 0 0) no-repeat;
+  --_p: 0%;
+  --c: #e95a49;
+  background: var(--_g) calc(var(--_p, 0%) - 100%) 0%,
+    var(--_g) calc(200% - var(--_p, 0%)) 0%,
+    var(--_g) calc(var(--_p, 0%) - 100%) 100%,
+    var(--_g) calc(200% - var(--_p, 0%)) 100%;
+  background-color: var(--c);
+  background-size: 50.5% calc(var(--_p, 0%) / 2 + 0.5%);
+  border: none;
+  border-radius: 100px;
+  box-shadow: 0 0 0 0.1em inset var(--c);
+  color: white;
+  height: 3rem;
+  margin: 10px;
+  outline-offset: 0.1em;
+  padding: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transition: background-position 0s 0.4s, background-size 0.4s;
+  width: 3rem;
+  z-index: 1000;
+
+  &:hover {
+    --_p: 100%;
+    transition: background-position 0.4s, background-size 0s;
+  }
+
+  &:active {
+    background-color: var(--c);
+    box-shadow: 0 0 9e9Q inset #0009;
+    color: #fff;
+  }
+}
+
+.container {
+  height: 100vh;
+  position: relative;
+  width: 100vw;
+}
+
+.contenu {
+  align-items: center;
+  background-color: var(--clr-primary-400);
+  box-shadow: 0 5px 15px 5px rgba(0, 0, 0, 0.41);
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  justify-content: center;
+  left: 50%;
+  min-height: 100vh;
+  position: absolute;
+  transform: translateX(-50%);
+  width: 60vw;
+  z-index: 1000;
+
+  &__card {
+    margin-top: 4rem;
+    margin-bottom: -1rem;
+    opacity: 0;
+
+    &__gaspillage {
+      margin-top: 6rem;
+      margin-bottom: 0rem; 
+    }
+
+    &__quiz {
+      margin-top: 6rem;
+      margin-bottom: 1rem;
+    }
+
+    &__semer {
+        margin-top: 6rem;
+        margin-bottom: -1rem;
+    }
+
+    &__changement {
+      margin-top: 4rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__plateau {
+    border-radius: 10px;
+    height: fit-content;
+    margin-bottom: 2rem;
+    width: 35rem;
+
+    &__text {
+      font-size: x-large;
+      text-align: center;
+    }
+  }
+
+  &__viande {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__pizza {
+    &__menu {
+      align-items: center;
+      display: flex;
+      justify-content: space-around;
+      padding: 1.5rem;
+    }
+
+    &__paragaphe {
+      width: 45%;
+    }
+
+    &__text {
+      font-size: x-large;
+    }
+  }
+
+  &__bd {
+    &__menu {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__title {
+      font-size: x-large;
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__semer {
+    display: flex;
+    margin-left: 2rem;
+    margin-right: 4rem;
+  
+    &__groupe{
+      width: 60%;
+
+      &__salade{
+        &__middle{
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+  
+    &__paragraphe {
+      display: flex;
+      justify-content: center;
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      &__text {
+        font-size: x-large;
+        text-align: center;
+      }
+    }
+  }
+
+  &__acheter {
+    &__ligne {
+      list-style: none;
+    }
+
+    &__groupe {
+      display: flex;
+      justify-content: flex-end;
+      margin: 0;
+    }
+
+    &__paragraphe {
+      width: 50%;
+      margin: 0 1rem;
+    }
+
+    &__text {
+      text-align: center;
+      font-size: large;
+    }
+  }
+
+  &__balance {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__lottie {
+      list-style: none;
+    }
+
+    &__groupe {
+      display: flex;
+      justify-content: space-around;
+      margin: 0;
+      padding: 0;
+    }
+
+    &__paragraphe {
+      width: 35%;
+    }
+
+    &__text {
+      font-size: large;
+    }
+
+    &__image {
+      margin: 0 1rem;
+    }
+  }
+
+  &__transition {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__frite {
+      list-style: none;
+      justify-content: center;
+      display: flex;
+      margin-bottom: 3rem;
+    }
+
+    &__bilan {
+      display: flex;
+      justify-content: center;
+
+      &__text {
+        font-size: large;
+        width: 75%;
+        text-align: center;
+      }
+    }
+  }
+  &__tartine {
+    display: flex;
+    gap: 8rem;
+  }
+}

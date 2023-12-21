@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Petemoss&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Inria+Sans&display=swap");
+
+$font-sizes: (
+    400: 1.125rem,
+    500: 1.3125rem,
+    600: 1.5rem,
+    800: 3rem,
+    900: 3.75rem,
+);
+
+$colors: (
+    neutral: (
+        100: #fff,
+        900: #000000,
+    ),
+    primary: (
+        400: antiquewhite,
+        500: #233b3b,
+    )
+);
+
+:root{
+
+    @each $key, $values in $font-sizes {
+        --fs-#{$key}: #{$values};
+    }
+
+    @each $color, $shade-map in $colors {
+        @each $key, $values in $shade-map{
+            --clr-#{$color}-#{$key}: #{$values};
+        }
+    }
+}
+
+
+/* Reset CSS */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin and padding */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove list styles */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Remove default anchor styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Remove default button styles */
+button {
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+p {
+  text-align: justify;
+  padding: 0;
+}
+
+/* Set default background and font color */
+body {
+  color: var(--clr-neutral-900);
+}
+
+/* Set default font family and size */
+body {
+  font-family: "Inria Sans", serif;
+  font-size: 16px;
+}
+
+/* Remove horizontal scrollbar */
+body {
+  overflow-x: hidden;
+  background-color: var(--clr-primary-500);
+  background-image: url("../assets/bg.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover; 
+}
